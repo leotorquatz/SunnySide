@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
 :root{
     --text-font: 'Barlow', sans-serif;
     --title-font: 'Fraunces', serif;
@@ -13,7 +23,8 @@
     --white: #ffffff;
     --graphic-text: #25564b;
     --photography-text: #19536b;
-    --footer: #458c7e;
+    --footer-text: #2c7566;
+    --footer-bg: #90D4C5;
     --background: #FFFBFB;
 }
 body{
@@ -202,4 +213,45 @@ header .arrow-down{
 .client_avatar.client3{
     background-image: url(./images/image-jennie.jpg);
     
+}
+
+.images{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.images img{
+    width: 100%;
+}
+
+footer{
+    background-color: var(--footer-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0px;
+    gap: 36px;
+}
+
+footer h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--footer-text);
+}
+
+footer nav ul{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    font-weight: 600;
+    color: var(--footer-text);
+}
+
+footer>ul{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 48px;
 }
